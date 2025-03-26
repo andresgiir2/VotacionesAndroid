@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Votación"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese su edad:" />
+
+        <EditText
+            android:id="@+id/etEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Edad"
+            android:minHeight="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccione su candidato:"
+            android:layout_marginTop="12dp" />
+
+        <RadioGroup
+            android:id="@+id/rgCandidatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbCandidato1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Candidato 1"
+                android:minHeight="50dp" />
+
+            <RadioButton
+                android:id="@+id/rbCandidato2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Candidato 2"
+                android:minHeight="50dp" />
+
+            <RadioButton
+                android:id="@+id/rbCandidato3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Candidato 3"
+                android:minHeight="50dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnVotar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Votar"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvContador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Elector 1 de X"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:textStyle="italic" />
+    </LinearLayout>
+</ScrollView>
